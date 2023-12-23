@@ -1,0 +1,51 @@
+html {
+
+	background: #292929;
+	color: whitesmoke;
+
+}
+
+h1  {
+	color: whitesmoke;
+	font-size: 45px;
+	text-align: center;
+	font-family: "Monaco", monospace;
+}
+
+h2, #ordem {
+	color: whitesmoke;
+	font-size: 35px;
+	text-align: center;
+}
+
+aside {
+	font-size: 20px;
+	text-align: center;
+	color: lightgray;
+
+}
+
+.atribuições {
+
+	text-align: center;
+}
+
+#perfil {
+
+	border-style: 10px solid transparent;
+	border-radius: 50px
+}
+
+.atribuições {
+	list-style: none;
+}
+a:link, a:visited{
+	text-decoration: none;
+	background-color: grey;
+	border-style: 1px solid	blue;
+	margin-bottom: 1px;
+}
+a:hover, a:active {
+	color:purple;
+
+}
