@@ -6,25 +6,50 @@
 
 <style>
 
+html {
+
+	background: #292929;
+	color: whitesmoke;
+
+}
+
 h1  {
-	color: blue;
+	color: whitesmoke;
 	font-size: 45px;
 	text-align: center;
+	font-family: "Monaco", monospace;
 }
 
-aside  {
+h2, #ordem {
+	color: whitesmoke;
+	font-size: 35px;
+	text-align: center;
+}
+
+aside {
 	font-size: 20px;
 	text-align: center;
+	color: lightgray;
 
 }
 
+.atribuições {
+
+	text-align: center;
+}
+
+#perfil {
+
+	border-style: 10px solid transparent;
+	border-radius: 50px
+}
 
 </style>
 
 </head>
 <body>
 	<h1>
-	<img src="perfil.jpg" width="150" height="115" alt="Imagem própria">&nbsp;Mateus Burlamaqui Portfolio
+	<img id="perfil" src="perfil.jpg" width="150" height="115" alt="Imagem própria">&nbsp;MATEUS BURLAMAQUI 
 	</h1>	
 	<aside>
 		Sou um desenvolvidor de software curioso e autoditada, busco o aprendizado e novas formas de melhorar. Estudo diariamente buscando o aprimoramento técnico, comportamental e psicológico, buscando além da evolução apenas na programação. Tenho o sonho de trabalhar com programação no exterior e me tornar alguém importante na área.
@@ -33,18 +58,18 @@ aside  {
  <div>	
  	<p>
  	<h2>Curriculo:</h2> 	
- 	<ul>
+ 	<ul class="atribuições">
  		<li>Engenharia de Software PUCPR</li>
  		<li>HTML, CSS, JAVASCRIPT COURSE JOHN HOPKINS UNIVERSITY</li>
  	</ul>
- 		 Ordem das linguagens:
- 				<ol>	
+ 		 <p id="ordem">Ordem das linguagens:</p>
+ 				<ol class="atribuições">	
  						<li>HTML</li>
  						<li>JAVASCRIPT</li>
  						<li>CSS</li>
  				</ol>	
  	<p>
- 		<section id="links">
+ 		<section class="atribuições">
  		<h3>Links:</h3>
 		 		<a href="https://www.instagram.com/mateuss.bm/" target="_blank" title="Instagram Page">
  					<img src="https://i.pinimg.com/originals/c2/76/b1/c276b1e50e46ec918ec5a20dc99f3790.png" width="20" height="20" alt="LogoInstagram">
