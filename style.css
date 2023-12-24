@@ -1,15 +1,28 @@
+* {
+		box-sizing: border-box;
+}
+
 html {
 
 	background: #292929;
 	color: whitesmoke;
-
+	font-family: "Monaco", monospace;
 }
 
-h1  {
+h1 {
 	color: whitesmoke;
 	font-size: 45px;
 	text-align: center;
-	font-family: "Monaco", monospace;
+}
+
+
+.section-text {
+	font-size: 20px;
+	text-align: center;
+	color: lightgray;
+	clear: both;
+
+
 }
 
 h2, #ordem {
@@ -18,32 +31,29 @@ h2, #ordem {
 	text-align: center;
 }
 
-aside {
-	font-size: 20px;
-	text-align: center;
-	color: lightgray;
 
+.posicionamentofoto {
+	text-align: center;
+	margin-top: 20px;
 }
 
-.atribuições {
-
-	text-align: center;
-}
-
-#perfil {
-
+.circlepicture {
 	border-style: 10px solid transparent;
-	border-radius: 50px
+	border-radius: 200px;
+	margin: 0px;
+
 }
 
 .atribuições {
 	list-style: none;
+	text-align: center;
 }
+
 a:link, a:visited{
 	text-decoration: none;
-	background-color: grey;
 	border-style: 1px solid	blue;
 	margin-bottom: 1px;
+	color: blue;
 }
 a:hover, a:active {
 	color:purple;
