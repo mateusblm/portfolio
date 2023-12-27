@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background-color: #101010;
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 0.4fr 2.2fr 0.4fr;
+	grid-template-rows: 0.2fr 1.8fr 1fr;
+	grid-template-areas: "sidebar navbar sidebar2" "sidebar main sidebar2" "sidebar content1 sidebar2";
+}
+
+
+
+#navbar {
+	margin: 40px;
+	grid-area: navbar;
+	display: flex;
+	background-color: #202020;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	height: 80px;
+}
+#navbar a {
+	color: white;
+	text-align: center;
+	font-family: "Monaco", monospace;
+	text-decoration: none;
+
+	margin: 25px;
+	font-size: 20px;
+}
+#navbar a:hover:visited {
+	color: grey;
+}	
+
+#sidebar {
+	grid-area: sidebar;
+	background-color: #101010;
+}
+
+#sidebar2 {
+	grid-area: sidebar2;
+	background-color: #101010;
+}
+
+#main {
+	grid-area: main; 
+	background-color: #101010;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.05fr 1.8fr 1fr;
+	grid-template-areas: "imagem nome" "imagem textoinicial" ;
+	grid-gap: 10px;
+	margin: 40px;
+
+}
+
+
+#main img{
+	grid-area: imagem;
+	border-radius: 20px;
+	border-color: white;
+
+}
+#main p {
+	margin: 20px;
+	color: grey;
+	font-size: 30px;
+	text-align: center;
+	grid-area: textoinicial;
+
+
+}
+
+#main h1{
+	color: white;
+	font-size: 60px;
+	font-family: "Lucida Console", "Courier New", monospace;
+  	white-space: nowrap;
+	grid-area: nome	;
+	width: 800px	;
+
+
+
+}
+
+
+#content1 {
+	grid-area: content1;
+	color: white;
+
+}
+
+
+#botaocontato{
+	text-align: center;
+	text-decoration: none;
+	font-family: "Monaco", monospace;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 50px;
+    background-color: #101010;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+  	left: 300px	;
+    border-radius: 15px;
+    height: 75px;
+}
+#botaoresumo{
+	text-align: center;
+	text-decoration: none;
+	font-family: "Monaco", monospace;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-width: 250px	;
+    height: 50px;
+    background-color: #101010;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    cursor: pointer;
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    height: 75px;
+}
