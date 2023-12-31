@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -28,7 +30,7 @@
 #navbar a {
 	color: white;
 	text-align: center;
-	font-family: "Monaco", monospace;
+	font-family: 'Lato', sans-serif;
 	text-decoration: none;
 
 	margin: 25px;
@@ -36,7 +38,7 @@
 }
 #navbar a:hover:visited {
 	color: grey;
-}	
+}
 
 #sidebar {
 	grid-area: sidebar;
@@ -49,7 +51,7 @@
 }
 
 #main {
-	grid-area: main; 
+	grid-area: main;
 	background-color: #131313;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -84,61 +86,67 @@
   	white-space: nowrap;
 	grid-area: nome	;
 	width: 800px	;
-
-
-
 }
-
 
 #content1 {
 	grid-area: content1;
 	color: white;
-
 }
 
+#botaoresumo, #botaocontato{
+	text-align: center;
+	text-decoration: none;
+	font-family: "Monaco", monospace;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  max-width: 250px	;
+  height: 50px;
+  background-color: #101010;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  height: 75px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 5px 5px 15px #0008;
+	z-index: 2;
+}
 
 #botaocontato{
-	text-align: center;
-	text-decoration: none;
-	font-family: "Monaco", monospace;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    height: 50px;
-    background-color: #101010;
-    color: white;
-    border: 1px solid white;
-    font-size: 20px;
-    max-width: 250px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-  	left: 300px	;
-    border-radius: 15px;
-    height: 75px;
+	left: 38%
 }
-#botaocontato:hover {
-	background-color: grey;
+
+#botaoresumo::before, #botaoresumo::after, #botaocontato::before, #botaocontato::after{
+	content: '';
+	position: absolute;
+	height: 150%;
+	width: 150%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
 }
-#botaoresumo:hover {
-	background-color: grey;
+
+#botaoresumo::before, #botaocontato::before{
+	background: conic-gradient(#44f 20deg, transparent 120deg);
+	animation: rotate 4s infinite linear;
 }
-#botaoresumo{
-	text-align: center;
-	text-decoration: none;
-	font-family: "Monaco", monospace;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    max-width: 250px	;
-    height: 50px;
-    background-color: #101010;
-    color: white;
-    border: 1px solid white;
-    font-size: 20px;
-    cursor: pointer;
-     align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 15px;
-    height: 75px;
+
+#botaoresumo::after, #botaocontato::after {
+	background: #131313;
+	height: 95%;
+	width: 95%;
+	box-shadow: 5px 5px 15px #0008 inset;
+	border-radius: 10px;
+}
+
+
+@keyframes rotate {
+100% {
+	transform: translate(-50%, -50%)
+	rotate(-360deg);
+}
 }
