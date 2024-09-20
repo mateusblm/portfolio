@@ -397,9 +397,6 @@ footer .line-footer p a {
         font-size: 30px;
     }
 
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
 
 
     /* SOBRE */
@@ -417,8 +414,14 @@ footer .line-footer p a {
         text-align: center;
     }
 
+    .img-sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .img-sobre img{
-        width: 100%;
+        src: 0;
+        width: 50%;
     }
 
     /* PORTFÓLIO */
