@@ -14,7 +14,7 @@ Bem-vindo ao repositório do **Portfólio de Projetos**! Este projeto é um site
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- 
+
 ### Navegação
 
 1. **Home**: Página inicial com uma introdução sobre mim.
